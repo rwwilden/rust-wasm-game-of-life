@@ -3,6 +3,7 @@
 ARG VARIANT="bullseye"
 FROM mcr.microsoft.com/devcontainers/rust:1-${VARIANT}
 
+
 RUN curl https://rustwasm.github.io/wasm-pack/installer/init.sh -sSf | sh \
  && cargo install cargo-generate
 
