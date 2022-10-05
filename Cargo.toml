@@ -3,6 +3,9 @@ name = "rust-wasm-game-of-life"
 version = "0.1.1"
 authors = ["Ronald Wildenberg <rwwilden@gmail.com>"]
 edition = "2021"
+description = "Conway's Game of Life with Rust and WebAssembly"
+license = "MIT"
+repository = "https://github.com/rwwilden/rust-wasm-game-of-life"
 
 [lib]
 crate-type = ["cdylib", "rlib"]
@@ -23,6 +26,8 @@ console_error_panic_hook = { version = "0.1.7", optional = true }
 # compared to the default allocator's ~10K. It is slower than the default
 # allocator, however.
 wee_alloc = { version = "0.4.5", optional = true }
+
+js-sys = "0.3.60"
 
 [dev-dependencies]
 wasm-bindgen-test = "0.3.33"
